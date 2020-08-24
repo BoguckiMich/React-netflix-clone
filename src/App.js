@@ -2,13 +2,14 @@ import React from 'react';
 import Row from './Components/Row'
 import request from "./request"
 import Banner from './Components/Banner'
+import Nav from './Components/Nav';
 
 import './App.css';
 
 function App() {
   return (
     <div className="app">
-      {/* navbar */}
+      <Nav />
       <Banner />
       <Row title="NETFLIX ORIGINALS" fetchUrl={request.fetchNetlifOriginal} isLargeRow />
       <Row title="Trending Now" fetchUrl={request.fetchTrending} />
